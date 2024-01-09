@@ -4,7 +4,7 @@
       v-for="(game, gameIndex) in games"
       :key="gameIndex"
       class="games__game"
-      @click="$router.push({ name: game.routesName })"
+      @click="$router.push({ path: `${ERoutes.miniGames}/${game.routesName}` })"
     >
       <img :src="game.img" alt="" class="games__game-img" />
       <h1 class="games__game-title">{{ game.name }}</h1>
@@ -13,6 +13,7 @@
 </template>
 
 <script setup lang="ts">
+import { ERoutes } from "@/router/routes.types";
 import { TGame } from "@/components/Main/CGames.types";
 
 interface IProps {

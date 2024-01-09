@@ -20,19 +20,25 @@ const routes = [
         component: HomePage,
       },
       {
-        path: "",
-        name: ERoutes.ticTacToe,
-        component: TicTacToePage,
-      },
-      {
-        path: "",
-        name: ERoutes.seaBattle,
-        component: SeaBattlePage,
-      },
-      {
-        path: "",
-        name: ERoutes.threeInARow,
-        component: ThreeInARowPage,
+        path: "/mini-games",
+        name: ERoutes.miniGames,
+        children: [
+          {
+            path: "tic-tac-toe",
+            name: ERoutes.ticTacToe,
+            component: TicTacToePage,
+          },
+          {
+            path: "sea-battle",
+            name: ERoutes.seaBattle,
+            component: SeaBattlePage,
+          },
+          {
+            path: "three-in-a-row",
+            name: ERoutes.threeInARow,
+            component: ThreeInARowPage,
+          },
+        ],
       },
     ],
   },
