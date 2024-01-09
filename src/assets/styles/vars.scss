@@ -9,14 +9,16 @@
     #000 96.56%
   );
   --white: rgba(255, 255, 255, 1);
+  --bg-white-dim: rgba(255, 255, 255, 0.1);
   --primary: rgba(25, 133, 242, 1);
   --bg-secondary: rgba(8, 1, 64, 1);
   --bg-secondary-1: rgba(32, 23, 182, 0.20000000298023224);
 
   /* Text-size styles */
+  --text-caption: 0.75rem; /* 12px */
   --text-body: 0.875rem; /* 14px */
   --text-title: 1.5rem; /* 24px */
-  --text-caption: 0.75rem; /* 12px */
+  --text-status: 6rem; /* 96px */
 
   /* Base font-family */
   --base-font-family: "SF Pro", sans-serif;

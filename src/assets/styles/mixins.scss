@@ -8,9 +8,9 @@
   justify-content: $justify-content;
 }
 
-@mixin background-opacity($color, $opacity) {
-  background: $color;
-  background: rgba($color, $opacity);
+@mixin fade($color, $opacity) {
+  color: $color;
+  opacity: $opacity;
 }
 
 @mixin cover {

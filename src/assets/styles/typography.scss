@@ -21,3 +21,19 @@
   font-weight: 400;
   line-height: 27px;
 }
+
+/* TextError */
+@mixin text-error {
+  font-size: var(--text-title);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* TextErrorTitle */
+@mixin text-error-status {
+  font-size: var(--text-status);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

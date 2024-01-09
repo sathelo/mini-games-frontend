@@ -16,6 +16,11 @@ const routes = [
         name: ERoutes.home,
         component: HomePage,
       },
+      {
+        path: "",
+        name: ERoutes.ticTacToe,
+        component: HomePage,
+      },
     ],
   },
   {
