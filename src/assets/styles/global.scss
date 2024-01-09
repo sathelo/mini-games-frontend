@@ -3,6 +3,7 @@
 @import "./typography.scss";
 @import "./fonts.scss";
 
-a {
+a,
+button {
   cursor: pointer;
 }
