@@ -4,11 +4,10 @@
       v-for="(game, gameIndex) in games"
       :key="gameIndex"
       class="games__game"
+      @click="$router.push({ name: game.routesName })"
     >
-      <a :href="game.href" :target="game.target" class="games__game-link">
-        <img :src="game.img" alt="" class="games__game-img" />
-        <h1 class="games__game-title">{{ game.name }}</h1>
-      </a>
+      <img :src="game.img" alt="" class="games__game-img" />
+      <h1 class="games__game-title">{{ game.name }}</h1>
     </article>
   </section>
 </template>
@@ -29,12 +28,13 @@ defineProps<IProps>();
   flex-wrap: wrap;
 
   & > *:not(:last-child) {
-    margin-right: 1.6rem;
+    margin-right: 3.2rem;
   }
 
-  &__game-link {
+  &__game {
     @include flex-properties(flex, center);
     flex-direction: column;
+    cursor: pointer;
   }
 
   &__game-img {

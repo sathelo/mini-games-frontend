@@ -13,22 +13,23 @@ import SeaBattleIco from "@/assets/images/icons/sea-battle-ico.png";
 import ThreeInARowIco from "@/assets/images/icons/three-in-a-row-ico.png";
 
 import { TGame } from "@/components/Main/CGames.types";
+import { ERoutes } from "@/router/routes.types";
 
 const games = ref<TGame[]>([
   {
     name: "Крестики нолики",
     img: TicTacToeIco,
-    target: "_self",
+    routesName: ERoutes.ticTacToe,
   },
   {
     name: "Морской бой",
     img: SeaBattleIco,
-    target: "_self",
+    routesName: ERoutes.seaBattle,
   },
   {
     name: "Три в ряд",
     img: ThreeInARowIco,
-    target: "_self",
+    routesName: ERoutes.threeInARow,
   },
 ]);
 </script>

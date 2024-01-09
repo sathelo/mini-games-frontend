@@ -21,6 +21,16 @@ const routes = [
         name: ERoutes.ticTacToe,
         component: HomePage,
       },
+      {
+        path: "",
+        name: ERoutes.seaBattle,
+        component: HomePage,
+      },
+      {
+        path: "",
+        name: ERoutes.threeInARow,
+        component: HomePage,
+      },
     ],
   },
   {
