@@ -23,10 +23,11 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
+
 import MiniGamesLogo from "@/assets/images/logos/mini-games-logo.svg";
 
 import { TMenuAction } from "@/components/Header/CHeader.types";
-import { ref } from "vue";
 
 const menu: TMenuAction[] = [
   {
@@ -48,7 +49,12 @@ ws.onmessage = function (event) {
 .header {
   @include flex-properties(flex, center, space-between);
 
+  & > *:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+
   &__logo-ico {
+    @include cover;
     width: 100%;
     max-width: 3.6rem;
     height: auto;

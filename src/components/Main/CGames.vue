@@ -26,6 +26,7 @@ defineProps<IProps>();
 <style lang="scss" scoped>
 .games {
   @include flex-properties(flex);
+  flex-wrap: wrap;
 
   & > *:not(:last-child) {
     margin-right: 1.6rem;
