@@ -39,8 +39,7 @@ defineProps<IProps>();
 
   &__game-img {
     width: 100%;
-    max-width: 3.6rem;
-    height: auto;
+    max-width: 16vw;
     user-select: none;
   }
 }

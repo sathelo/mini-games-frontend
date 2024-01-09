@@ -54,9 +54,8 @@ ws.onmessage = function (event) {
   }
 
   &__logo-ico {
-    @include cover;
     width: 100%;
-    max-width: 3.6rem;
+    max-width: 6.6vw;
     height: auto;
     fill: var(--white);
   }
