@@ -1,0 +1,26 @@
+@mixin flex-properties(
+  $flex: inherit,
+  $align-items: inherit,
+  $justify-content: inherit
+) {
+  display: $flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin background-opacity($color, $opacity) {
+  background: $color;
+  background: rgba($color, $opacity);
+}
+
+@mixin cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin contain {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

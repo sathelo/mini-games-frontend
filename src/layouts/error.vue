@@ -1,7 +1,5 @@
 <template>
-  <div class="app">
-    <router-view />
-  </div>
+  <div>page not found</div>
 </template>
 
 <script setup lang="ts"></script>

@@ -1,0 +1,23 @@
+:root {
+  /* Color styles */
+  --bg-primary: rgba(5, 0, 43, 1);
+  --bg-primary-0: linear-gradient(
+    184deg,
+    rgba(0, 0, 0, 0) 3.44%,
+    rgba(0, 0, 0, 0.5) 33.02%,
+    rgba(0, 0, 0, 0.77) 71.83%,
+    #000 96.56%
+  );
+  --white: rgba(255, 255, 255, 1);
+  --primary: rgba(25, 133, 242, 1);
+  --bg-secondary: rgba(8, 1, 64, 1);
+  --bg-secondary-1: rgba(32, 23, 182, 0.20000000298023224);
+
+  /* Text-size styles */
+  --text-body: 14px;
+  --text-title: 24px;
+  --text-caption: 12px;
+
+  /* Base font-family */
+  --base-font-family: "SF Pro", sans-serif;
+}

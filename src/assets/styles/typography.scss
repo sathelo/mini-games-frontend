@@ -1,0 +1,23 @@
+/* TextBody */
+@mixin text-body {
+  font-size: var(--text-body);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* TextCaption */
+@mixin text-caption {
+  font-size: var(--text-caption);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+/* TextTitle */
+@mixin text-title {
+  font-size: var(--text-title);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+}
