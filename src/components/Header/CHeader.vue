@@ -17,6 +17,8 @@
         </li>
       </ul>
     </nav>
+
+    <span class="header__online-users">Сейчас на сайте: {{ onlineUsers }}</span>
   </header>
 </template>
 
@@ -24,6 +26,7 @@
 import MiniGamesLogo from "@/assets/images/logos/mini-games-logo.svg";
 
 import { TMenuAction } from "@/components/Header/CHeader.types";
+import { ref } from "vue";
 
 const menu: TMenuAction[] = [
   {
@@ -32,6 +35,13 @@ const menu: TMenuAction[] = [
     target: "_self",
   },
 ];
+
+const onlineUsers = ref(0);
+const ws = new WebSocket("ws://localhost:8080");
+ws.onmessage = function (event) {
+  const data = JSON.parse(event.data);
+  onlineUsers.value = data.onlineUsers;
+};
 </script>
 
 <style lang="scss" scoped>
