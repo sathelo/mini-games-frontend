@@ -40,6 +40,7 @@ defineProps<IProps>();
   &__game-img {
     width: 100%;
     max-width: 16vw;
+    margin-bottom: 1rem;
     user-select: none;
   }
 }
